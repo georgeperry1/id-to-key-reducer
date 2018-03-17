@@ -1,3 +1,8 @@
+[![npm version](https://badge.fury.io/js/rs-tabs.svg)](https://badge.fury.io/js/rs-tabs)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/cjjenkinson/react-simple-tabs)
+[![codecov](https://codecov.io/gh/georgeperry1/id-to-key/branch/master/graph/badge.svg)](https://codecov.io/gh/georgeperry1/id-to-key)
+
+
 # id-to-key-reducer
 This package helps you normalize API or JSON data by reducing an array of objects into a new object with their ids as the keys. It is intended to help 'flatten' data for use with libraries such as React and Redux.
 
