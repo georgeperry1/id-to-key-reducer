@@ -1,7 +1,8 @@
 {
   "name": "id-to-key",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Normalize API/JSON data by reducing an array of objects into a new object with their ids as the keys",
+  "keyword": ["normalize", "api", "json", "react", "redux", "data"],
   "main": "index.js",
   "scripts": {
     "test": "mocha"
