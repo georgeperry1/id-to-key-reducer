@@ -11,5 +11,6 @@ before_deploy:
   - git commit -m 'travis testing'
 deploy:
   provider: npm
+  email: $NPM_EMAIL_ADDRESS
   on:
     branch: master
