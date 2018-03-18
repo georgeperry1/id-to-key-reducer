@@ -1,4 +1,18 @@
 language: node_js
 node_js:
-  - "iojs"
-  - "7"
+  - "9"
+install:
+  - npm install
+  - npm install -g codecov
+script:
+  - npm test && codecov
+before_deploy:
+  - npm run build
+  - git add .
+  - git commit -m 'travis testing'
+deploy:
+  provider: npm
+  email: $NPM_EMAIL_ADDRESS
+  api_key: $NPM_AUTH_TOKEN
+  on:
+    branch: master
