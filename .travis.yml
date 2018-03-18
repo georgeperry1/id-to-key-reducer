@@ -6,11 +6,3 @@ install:
   - npm install -g codecov
 script:
   - npm test && codecov
-before_deploy:
-  - git add .
-  - git commit -m 'travis testing'
-deploy:
-  provider: npm
-  email: $NPM_EMAIL_ADDRESS
-  on:
-    branch: master
