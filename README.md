@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/rs-tabs.svg)](https://badge.fury.io/js/rs-tabs)
+[![npm version](https://badge.fury.io/js/id-to-key.svg)](https://badge.fury.io/js/id-to-key)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/georgeperry1/id-to-key-reducer)
 [![codecov](https://codecov.io/gh/georgeperry1/id-to-key-reducer/branch/master/graph/badge.svg)](https://codecov.io/gh/georgeperry1/id-to-key-reducer)
 
