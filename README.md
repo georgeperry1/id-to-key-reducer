@@ -4,7 +4,7 @@
 
 
 # id-to-key-reducer
-This package helps you normalize API or JSON data by reducing an array of objects into a new object with their ids as the keys. It is intended to help 'flatten' data for use with libraries such as React and Redux.
+This package helps you normalize API or JSON data by reducing an array of objects into a new object with their ids as the keys. It is intended to help 'flatten' data for use with libraries such as React and Redux. This reducer works with both 'id' and '\_id' and currently will only work for arrays.
 
 
 ## Installation
@@ -98,6 +98,12 @@ const newData = {
 }
 
 ```
+
+## Coming soon
+
+* Custom 'id' identifiers; for example 'id-number'
+* Reduce an object, not just an array
+* Increase test coverage to 100%
 
 ## Dependencies
 

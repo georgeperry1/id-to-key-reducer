@@ -1,6 +1,6 @@
 {
   "name": "id-to-key",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Normalize API/JSON data by reducing an array of objects into a new object with their ids as the keys",
   "keyword": [
     "normalize",
