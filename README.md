@@ -26,7 +26,7 @@ import idToKey from 'id-to-key';
 
 ## Example
 
-Use with an Array:
+### Use with an Array:
 
 Input:
 ```js
@@ -99,7 +99,7 @@ const newData = {
 
 ```
 
-Use with an Object:
+### Use with an Object:
 
 Input:
 ```js
