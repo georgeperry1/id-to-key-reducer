@@ -28,7 +28,7 @@ import idToKey from 'id-to-key';
 
 ### Use with an Array:
 
-Input:
+**Input:**
 ```js
   const data = [
     {
@@ -58,7 +58,7 @@ Input:
     }
   ];
 ```
-We want to take the ```id``` property and set it as the key in a new object:
+We want to take the ```_id``` property and set it as the key in a new object:
 
 ```js
 const idToKey = require('id-to-key');
@@ -67,7 +67,7 @@ const newData = idToKey(data);
 
 ```
 
-Output:
+**Output:**
 ```js
 const newData = {
   1001: {
@@ -101,7 +101,7 @@ const newData = {
 
 ### Use with an Object:
 
-Input:
+**Input:**
 ```js
   const data = {
     Ben: {
@@ -126,7 +126,7 @@ Input:
     }
   };
 ```
-With an object, be sure to pass it an ```'oldId'``` argument if you want to current key to become a property on the object, which should be a **STRING**. In the example below, ```'name'``` is passed, which will cause each object to have a ```'name'``` property with as name as the value.
+When using idToKey with an object, you can pass it an ```'oldId'``` argument if you want to set the current key as a property on the object, which should be a **STRING**. In the example below, ```'name'``` is passed as the second argument, which will give each object a new ```'name'``` property with each name as the value:
 
 ```js
 const idToKey = require('id-to-key');
@@ -135,7 +135,7 @@ const newData = idToKey(data, 'name');
 
 ```
 
-Output:
+**Output:**
 ```js
 const newData = {
   1001: {
