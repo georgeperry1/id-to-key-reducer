@@ -12,7 +12,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "codecov": "codecov"
   },
   "author": "George Perry",
   "license": "MIT",

@@ -47,18 +47,18 @@ describe('idToKey', () => {
     expect(newDataTwo).to.have.property('1004');
     expect(newDataTwo).to.have.property('1005');
     expect(newDataTwo).to.not.have.property('1009');
-    expect(newDataThree).to.have.property('1001');
-    expect(newDataThree).to.have.property('1002');
-    expect(newDataThree).to.have.property('1003');
-    expect(newDataThree).to.have.property('1004');
-    expect(newDataThree).to.have.property('1005');
-    expect(newDataThree).to.not.have.property('1009');
-    expect(newDataFour).to.have.property('1001');
-    expect(newDataFour).to.have.property('1002');
-    expect(newDataFour).to.have.property('1003');
-    expect(newDataFour).to.have.property('1004');
-    expect(newDataFour).to.have.property('1005');
-    expect(newDataFour).to.not.have.property('1009');
+    expect(newDataThree).to.have.property('2001');
+    expect(newDataThree).to.have.property('2002');
+    expect(newDataThree).to.have.property('2003');
+    expect(newDataThree).to.have.property('2004');
+    expect(newDataThree).to.have.property('2005');
+    expect(newDataThree).to.not.have.property('2009');
+    expect(newDataFour).to.have.property('2001');
+    expect(newDataFour).to.have.property('2002');
+    expect(newDataFour).to.have.property('2003');
+    expect(newDataFour).to.have.property('2004');
+    expect(newDataFour).to.have.property('2005');
+    expect(newDataFour).to.not.have.property('2009');
   });
 
   it('should return an Object with the key values as the original Objects', () => {
@@ -68,16 +68,16 @@ describe('idToKey', () => {
     expect(newDataTwo).to.have.nested.property('1001.name');
     expect(newDataTwo).to.have.nested.property('1001.age');
     expect(newDataTwo).to.not.have.nested.property('1001.height');
-    expect(newDataThree).to.have.nested.property('1001.name');
-    expect(newDataThree).to.have.nested.property('1001.age');
-    expect(newDataThree).to.not.have.nested.property('1001.height');
-    expect(newDataFour).to.have.nested.property('1001.name');
-    expect(newDataFour).to.have.nested.property('1001.age');
-    expect(newDataFour).to.not.have.nested.property('1001.height');
+    expect(newDataThree).to.have.nested.property('2001.name');
+    expect(newDataThree).to.have.nested.property('2001.age');
+    expect(newDataThree).to.not.have.nested.property('2001.height');
+    expect(newDataFour).to.have.nested.property('2001.name');
+    expect(newDataFour).to.have.nested.property('2001.age');
+    expect(newDataFour).to.not.have.nested.property('2001.height');
   });
 
   it('should set the oldId as a property on the new Object when used on an Object', () => {
     expect(newDataTwo).to.have.nested.property('1001.name');
-    expect(newDataFour).to.have.nested.property('1001.name');
+    expect(newDataFour).to.have.nested.property('2001.name');
   });
 });
