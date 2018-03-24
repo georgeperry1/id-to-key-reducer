@@ -170,7 +170,6 @@ const newData = {
 ## Coming soon
 
 * Custom 'id' identifiers; for example 'id-number'
-* Increase test coverage to 100%
 
 ## Dependencies
 
