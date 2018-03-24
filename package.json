@@ -13,7 +13,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "codecov": "codecov"
+    "codecov": "codecov",
+    "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "author": "George Perry",
   "license": "MIT",

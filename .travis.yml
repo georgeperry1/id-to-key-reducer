@@ -7,4 +7,6 @@ install:
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec
   - ./node_modules/.bin/codecov
-  - npm test && codecov
+  - npm test
+after_success:
+  - npm report-coverage
