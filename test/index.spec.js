@@ -15,10 +15,16 @@ describe('idToKey', () => {
   const mockDataTwo = mockObjectData;
   const mockDataThree = mockArrayDataTwo;
   const mockDataFour = mockObjectDataTwo;
+  const str = 'Not an array or object';
+  const num = 42;
+  const func = () => console.log('Not an array or object');
   const newDataOne = idToKeyTest(mockDataOne);
   const newDataTwo = idToKeyTest(mockDataTwo, 'name');
   const newDataThree = idToKeyTest(mockDataThree);
   const newDataFour = idToKeyTest(mockDataFour, 'name');
+  const newDataFive = idToKeyTest(str);
+  const newDataSix = idToKeyTest(num);
+  const newDataSeven = idToKeyTest(func);
 
   it('should return an Object', () => {
     expect(newDataOne).to.be.an('object');
@@ -79,5 +85,11 @@ describe('idToKey', () => {
   it('should set the oldId as a property on the new Object when used on an Object', () => {
     expect(newDataTwo).to.have.nested.property('1001.name');
     expect(newDataFour).to.have.nested.property('2001.name');
+  });
+
+  it('should throw an error if passed data that is not an object or array', () => {
+    expect(newDataFive).to.be.an('error');
+    expect(newDataSix).to.be.an('error');
+    expect(newDataSeven).to.be.an('error');
   });
 });
